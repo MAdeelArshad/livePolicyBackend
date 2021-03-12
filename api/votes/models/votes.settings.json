@@ -2,17 +2,18 @@
   "kind": "collectionType",
   "collectionName": "votes",
   "info": {
-    "name": "Votes"
+    "name": "Votes",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "bills": {
-      "via": "votes",
       "collection": "bills",
+      "via": "votes",
       "dominant": true
     },
     "users_permissions_users": {

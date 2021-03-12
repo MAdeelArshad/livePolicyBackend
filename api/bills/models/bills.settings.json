@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "Billname": {
@@ -27,8 +27,8 @@
       "type": "string"
     },
     "votes": {
-      "collection": "votes",
-      "via": "bills"
+      "via": "bills",
+      "collection": "votes"
     }
   }
 }
